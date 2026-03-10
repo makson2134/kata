@@ -11,11 +11,11 @@ public class MonthData {
 
     public void printDaysAndSteps(){
         for (int i = 0; i < days.length; i ++){
-            System.out.printf("%d-й день: %d\n", i, days[i]);
+            System.out.printf("%d-й день: %d\n", i+1, days[i]);
         }
     }
 
-    public int MaxSteps(){
+    public int maxSteps(){
         var max = 0;
         for (int day : days){
             if (day > max) {
